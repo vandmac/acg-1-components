@@ -1,5 +1,7 @@
 p {
   color: darkgreen;
   font-style: bold;
-    font-size:2em;
+  font-size:2em;
+  background-color: palegreen;
+  border: 2px solid darkgreen;
 }

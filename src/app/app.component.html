@@ -4,10 +4,17 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-xs-12">
-            <h3>I'am in the AppComponent !</h3>
-            <hr>
+        <h3>I'am in the AppComponent !</h3>
+        input: <input type="text" [(ngModel)]="name">
+        <h2>hello {{name}}</h2>
+        <hr>
+        <div class="col-xs-5">
             <app-servers></app-servers>
+            <hr>
+        </div>
+        <div class="col-xs-7">
+            <app-success-alert></app-success-alert>
+            <app-warning-alert></app-warning-alert>
         </div>
     </div>
 </div>

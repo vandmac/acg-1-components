@@ -6,12 +6,14 @@ import{HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
+import { Zad3Component } from './zad3/zad3.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ServerComponent,
-    ServersComponent
+    ServersComponent,
+    Zad3Component
   ],
   imports: [
     BrowserModule,

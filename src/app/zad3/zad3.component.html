@@ -1,0 +1,7 @@
+<p>zad3 works!</p>
+<button class="btn btn-info" (click)="showInfo()">Display details</button>
+<p *ngIf='displayStatus'>Mi secreto es peligroso</p>
+<p *ngFor="let click of clicks" [ngStyle]="{backgroundColor: click>=5 ? 'lightblue':'transparent'}"
+    [ngClass]="{'aboveFive':click>=5}">
+    {{click}}
+    >Click date is: {{click}}</p>

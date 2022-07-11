@@ -30,4 +30,9 @@
       <app-even *ngFor="let evenNumber of evenNumbers" [number]="evenNumber"></app-even>
     </div>
   </div>
+  <form #gfg = "ngForm">
+    <br>
+    Name: <input type="text" name = 'name' ngModel>
+</form>
+<p>{{ gfg.value | json }}</p>
 </div>

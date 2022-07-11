@@ -1,2 +1,9 @@
-<button class="bt btn-success btn-sm" (click)="onStartGame()">Start Game</button>
-<button class="bt btn-danger btn-sm" (click)="onPauseGame()">Pause Game</button>
+<div class="row">
+    <div class="col-xs-6">
+        <button class="bt btn-success btn-sm" (click)="onStartGame()">Start Game</button>
+        <button class="bt btn-danger btn-sm" (click)="onPauseGame()">Pause Game</button>
+    </div>
+    <div class="col-xs-6">
+        <button class="btn btn-dark">{{buttonText}}</button>
+    </div>
+</div>

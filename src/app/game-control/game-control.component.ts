@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output } from "@angular/core";
+import { Component, OnInit, EventEmitter, Output, Input } from "@angular/core";
 
 @Component({
   selector: "app-game-control",
@@ -6,6 +6,8 @@ import { Component, OnInit, EventEmitter, Output } from "@angular/core";
   styleUrls: ["./game-control.component.css"],
 })
 export class GameControlComponent implements OnInit {
+  @Input() public buttonText: string = 'btntxt';
+  @Output() buttonTextPlaceholder: string = 'Start';
   @Output() intervalFired = new EventEmitter<number>();
   interval;
   lastNumber = 0;
